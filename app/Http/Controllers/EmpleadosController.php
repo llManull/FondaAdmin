@@ -7,9 +7,6 @@ use Illuminate\Http\Request;
 
 class EmpleadosController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $datos['empleados']=Empleado::paginate(4);

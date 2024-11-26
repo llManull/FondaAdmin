@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\EmpleadosController;
 use App\Http\Controllers\LoginAdminsController;
 use App\Http\Controllers\PedidosController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\SucursalesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +31,10 @@ Route::middleware(['auth.custom'])->group(function () {
     Route::resource('empleados', EmpleadosController::class);
     Route::get('/pedidos/index', [PedidosController::class, 'index'])->name('pedido');
     Route::resource('pedidos', PedidosController::class);
+    Route::get('/clientes/index', [ClientesController::class, 'index'])->name('cliente');
+    Route::resource('clientes', ClientesController::class);
+    Route::get('/sucursales/index', [SucursalesController::class, 'index'])->name('sucursal');
+    Route::resource('sucursales', SucursalesController::class);
 
     //Mis plantillas
     Route::view('/recursos/navbar', '/recursos/navbar');
