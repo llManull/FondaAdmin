@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fonda San Francisco</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" >
+    <link rel="icon" href="{{ asset('storage/favicon.png') }}" type="image/x-icon">
 </head>
 
 <body style="background-color: #fdecda;">
